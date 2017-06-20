@@ -21,39 +21,39 @@ public class ThirdTest {
 //    }
 
 
-    @Test
-    public void stubTest() throws Exception {
-        //test di una funzionalità che dipende dai dati su un DB
-        MyRepository repository = new MockRepository();
-        UserAccount ua = new UserAccount(repository, "michele");
-        boolean ok = ua.accedi("password_KO");
-        Assert.assertFalse(ok);
-        ok = ua.accedi("password_OK");
-        Assert.assertTrue(ok);
-    }
-
-    @Test
-    public void stubTest() throws Exception {
-        //test di una funzionalità che dipende dai dati su un DB
-        MyRepository repository = new MockRepository();
-        UserAccount ua = new UserAccount(repository, "sara");
-        ua.accedi("Any password");
-        boolean isAdmin = ua.isAdmin();
-
-        Assert.assertTrue(isAdmin);
-    }
-
-    @Test
-    public void stubTest() throws Exception {
-        //test di una funzionalità che dipende dai dati su un DB
-        MyRepository repository = new MockRepository();
-        Region region = StubRegion();
-        UserAccount ua = new UserAccount(repository, region, "sara");
-        ua.accedi("Any password");
-        boolean isAdmin = ua.isAdmin();
-
-        Assert.assertTrue(isAdmin);
-    }
+//    @Test
+//    public void stubTest() throws Exception {
+//        //test di una funzionalità che dipende dai dati su un DB
+//        MyRepository repository = new MockRepository();
+//        UserAccount ua = new UserAccount(repository, "michele");
+//        boolean ok = ua.accedi("password_KO");
+//        Assert.assertFalse(ok);
+//        ok = ua.accedi("password_OK");
+//        Assert.assertTrue(ok);
+//    }
+//
+//    @Test
+//    public void stubTest() throws Exception {
+//        //test di una funzionalità che dipende dai dati su un DB
+//        MyRepository repository = new MockRepository();
+//        UserAccount ua = new UserAccount(repository, "sara");
+//        ua.accedi("Any password");
+//        boolean isAdmin = ua.isAdmin();
+//
+//        Assert.assertTrue(isAdmin);
+//    }
+//
+//    @Test
+//    public void stubTest() throws Exception {
+//        //test di una funzionalità che dipende dai dati su un DB
+//        MyRepository repository = new MockRepository();
+//        Region region = StubRegion();
+//        UserAccount ua = new UserAccount(repository, region, "sara");
+//        ua.accedi("Any password");
+//        boolean isAdmin = ua.isAdmin();
+//
+//        Assert.assertTrue(isAdmin);
+//    }
 
 
 
